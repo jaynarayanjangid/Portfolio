@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jaynarayan Jangid | Portfolio</title>
+  <meta property="og:url" content="https://jaynarayan-portfolio.com" />
+  <meta property="og:title" content="Jaynarayan Jangid | Portfolio" />
+  <meta property="og:description" content="A modern, responsive portfolio website to showcase my work, skills, and contact information." />
+  <meta property="og:image" content="project-portfolio.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <header class="main-header">
+    <div class="container header-flex">
+      <div class="logo">JAYNARAYAN</div>
+      <button class="nav-toggle" id="navToggle" aria-label="Open navigation menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <nav id="mainNav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#services">Services</a>
+        <a href="#profile-card">Profile</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a href="JaynarayanJangid_Resume(1).pdf" class="resume-btn" download>Download Resume</a>
+    </div>
+  </header>
+
+  <section class="hero-section">
+    <div class="container hero-flex">
+      <div class="hero-img">
+        <img src="WhatsApp Image 2025-07-17 at 00.10.25_3ad47233.jpg" alt="Jaynarayan Jangid">
+      </div>
+      <div class="hero-content">
+        <h1>Hello, I'm <span>Jaynarayan Jangid</span></h1>
+        <p class="hero-role">Frontend Developer</p>
+        <p class="hero-desc">I create beautiful, responsive, and functional web experiences. Let's build something amazing together!</p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn primary">View Projects</a>
+          <a href="#contact" class="btn secondary">Contact Me</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-section" id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>Hello! I'm Jaynarayan Jangid, a passionate Frontend Developer with a love for creating beautiful and functional web experiences. I enjoy turning complex problems into simple, elegant solutions. My goal is to deliver high-quality, user-friendly websites that make a difference.
+        <br>
+        With a strong foundation in both frontend and backend development, I create scalable and user-friendly applications that solve real-world problems.
+      </p>
+    </div>
+  </section>
+
+  <section class="skills-section" id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>GSAP Animations</li>
+        <li>Responsive Design</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="projects-section" id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <img src="project-portfolio.png" alt="Personal Portfolio Website" class="project-img">
+          <h3>Personal Portfolio Website</h3>
+          <p>A modern, responsive portfolio website to showcase my work, skills, and contact information.</p>
+          <ul class="project-skills">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>Bootstrap</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://your-portfolio-live-demo.com" target="_blank" class="btn primary">Live Demo</a>
+            <a href="https://github.com/yourusername/portfolio" target="_blank" class="btn secondary">GitHub Repo</a>
+          </div>
+        </div>
+        <!-- <div class="project-card">
+          <img src="https://via.placeholder.com/400x220?text=Photo+Gallery+App" alt="Photo Gallery App" class="project-img">
+          <h3>Photo Gallery App</h3>
+          <p>A web app for displaying and filtering beautiful photography collections with smooth animations.</p>
+          <ul class="project-skills">
+            <li>React</li>
+            <li>GSAP</li>
+            <li>Responsive Design</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://your-gallery-live-demo.com" target="_blank" class="btn primary">Live Demo</a>
+            <a href="https://github.com/yourusername/photo-gallery" target="_blank" class="btn secondary">GitHub Repo</a>
+          </div>
+        </div> -->
+        <div class="project-card">
+          <img src="UI Landing page.png" alt="UI/UX Landing Page" class="project-img">
+          <h3>UI/UX Landing Page</h3>
+          <p>A landing page designed for a startup, focusing on clean UI and engaging user experience.</p>
+          <ul class="project-skills">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>UI/UX</li>
+          </ul>
+          <div class="project-links">
+            <a href="http://127.0.0.1:5501/index.html" target="_blank" class="btn primary">Live Demo</a>
+            <a href="https://github.com/jaynarayanjangid/UI-Landing-page" target="_blank" class="btn secondary">GitHub Repo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services-section" id="services">
+    <div class="container">
+      <h2>Services</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>Web Design</h3>
+          <p>Modern and responsive web design for all devices.</p>
+        </div>
+        <div class="service-card">
+          <h3>Frontend Development</h3>
+          <p>Building interactive and dynamic user interfaces.</p>
+        </div>
+        <div class="service-card">
+          <h3>UI/UX Consulting</h3>
+          <p>Improving user experience and interface usability.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="profile-card-section" id="profile-card">
+    <!-- <h2>Profile card</h2> -->
+    <div class="container profile-card-flex">
+      <div class="profile-card-img">
+        <img src="WhatsApp Image 2025-07-17 at 00.10.25_3ad47233.jpg" alt="Jaynarayan Jangid">
+      </div>
+      <div class="profile-card-content">
+        <h3>Jaynarayan Jangid</h3>
+        <p>Frontend Developer</p>
+        <div class="profile-links">
+          <a href="https://www.linkedin.com/in/jaynarayan-jangid-709821286/"><i class="fab fa-linkedin"></i> LinkedIn</a>
+          <a href="https://github.com/jaynarayanjangid"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form id="contactForm">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <div id="formMessage"></div>
+    </div>
+  </section>
+
+  <footer class="main-footer">
+    <div class="container-footer-flex">
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/jaynarayan-jangid-709821286/"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+      <p>© 2025 Jaynarayan Jangid. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
