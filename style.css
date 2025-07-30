@@ -12,24 +12,34 @@ body {
 }
 
 .main-header {
-  background: #fff;
+   background:linear-gradient(120deg, #e0e7ff 0%, #f8f9fa 100%);
   box-shadow: 0 2px 8px rgba(0,0,0,0.04);
   position: sticky;
   top: 0;
   z-index: 100;
 }
+/* Header Flex Layout */
 .header-flex {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1.2rem 0;
+
 }
+
+
 .logo {
+
   font-family: 'Playfair Display', serif;
   font-size: 2rem;
   font-weight: 700;
   color: #2d3a4b;
+  position: relative;
+ 
 }
+
+
+
 nav a {
   margin: 0 1rem;
   text-decoration: none;
@@ -40,18 +50,32 @@ nav a {
 nav a:hover {
   color: #0077ff;
 }
-.resume-btn {
+/* .resume-btn {
   background: #0077ff;
   color: #fff;
   padding: 0.6rem 1.2rem;
   border-radius: 4px;
   text-decoration: none;
   font-weight: 600;
+  transition: 0.2s; */
+  /* order: 4;
+  padding: 0.7em 1.5em;
+  margin-left: 1rem;
+  background: #222;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
   transition: background 0.2s;
-}
-.resume-btn:hover {
+  border: none;
+  cursor: pointer;
+  white-space: nowrap; 
+ } */
+
+/* .resume-btn:hover {
   background: #005fcc;
-}
+  
+} */
 
 
 .hero-section {
@@ -101,7 +125,7 @@ nav a:hover {
   font-weight: 600;
   text-decoration: none;
   margin-right: 1rem;
-  transition: background 0.2s, color 0.2s;
+  transition: 0.2s, color 0.2s;
 }
 .btn.primary {
   background: #0077ff;
@@ -192,9 +216,7 @@ section h2 {
 .project-img :hover{
    width: 1000px;
   height: 1800px;
- /* object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 1rem; */
+ 
 
 }
 .project-links {
@@ -295,7 +317,7 @@ section h2 {
   font-size: 1.1rem;
   font-weight: 600;
   cursor: pointer;
-  transition: background 0.2s;
+  transition: 0.2s;
 }
 .contact-section button:hover {
   background: #005fcc;
@@ -344,6 +366,7 @@ section h2 {
 
 /* Responsive Navigation */
 .nav-toggle {
+  /* order: 3; */
   display: none;
   flex-direction: column;
   justify-content: center;
@@ -365,15 +388,40 @@ section h2 {
   transition: 0.3s;
 }
 #mainNav {
+  /* order: 2; */
   display: flex;
   align-items: center;
   gap: 1rem;
   transition: right 0.3s;
 }
+
+
+
 @media (max-width: 900px) {
-  .nav-toggle {
-    display: flex;
+  .header-flex {
+    flex-wrap: wrap;
+    gap: 1rem;
   }
+
+  .logo {
+    /* order: 2; */
+    padding-left: 2rem;
+  }
+  #mainNav {
+    /* order: 3; */
+    width: 100%;
+    text-align: center;
+  }
+  .resume-btn {
+    /* order: 4; */
+    margin-left: 0;
+    margin-top: 0.5rem;
+    width: 100%;
+    text-align: center;
+  }
+   .nav-toggle{
+    display: flex;
+   }
   #mainNav {
     position: fixed;
     top: 0;
@@ -402,6 +450,11 @@ section h2 {
   }
 }
 @media (max-width: 600px) {
+
+
+  .hero-section{
+    margin-top: 1rem;
+  }
   .hero-flex {
     flex-direction: column;
     gap: 2rem;
@@ -411,18 +464,45 @@ section h2 {
     width: 120px;
     height: 120px;
   }
+ 
   .hero-content h1 {
     font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    
   }
   .hero-role {
     font-size: 1rem;
+    display: flex;
+    justify-content: center;
   }
   .hero-desc {
     font-size: 0.95rem;
+    display: flex;
+    justify-content: center;
+    padding-left:1rem ;
   }
   .hero-buttons .btn {
     font-size: 0.95rem;
-    padding: 0.5rem 1rem;
+    padding: 1rem 1rem;
+    /* margin-left: 2rem;
+    margin-right: 2rem; */
+    margin: 0.5rem;
+    display: flex;
+    justify-content: center;
+  }
+  .project-skills{
+    flex-wrap: wrap;
+  }
+
+  .profile-card-content h3, p{
+    display: flex;
+    justify-content: center;
+    
+  }
+  .profile-links{
+  padding-left: 1rem;
+    
   }
   .main-footer {
     padding: 1.2rem 0 0.7rem 0;
@@ -440,9 +520,7 @@ section h2 {
   .social-icons {
     margin-bottom: 0.5rem;
   }
-  .container {
-    width: 98%;
-  }
+  
   .project-card, .service-card {
     padding: 1rem 0.7rem;
   }

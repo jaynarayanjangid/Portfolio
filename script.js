@@ -1,31 +1,3 @@
-
-gsap.from("#logo", { duration: 1, y: -50, opacity: 0, ease: "bounce.out" });
-gsap.from("#profileImg", { duration: 1.2, scale: 0, opacity: 0, delay: 0.5, ease: "back.out(1.7)" });
-gsap.from("#mainTitle", { duration: 1, y: 40, opacity: 0, delay: 1 });
-gsap.from("#tagline", { duration: 1, y: 30, opacity: 0, delay: 1.3 });
-gsap.from("#ctaButtons", { duration: 1, y: 30, opacity: 0, delay: 1.6, stagger: 0.2 });
-
-document.querySelectorAll('nav a').forEach(link => {
-  link.addEventListener('click', function(e) {
-    const href = this.getAttribute('href');
-    if (href && href.startsWith('#')) {
-      e.preventDefault();
-      document.querySelector(href).scrollIntoView({ behavior: 'smooth' });
-    }
-  });
-});
-
-// Profile card GSAP animation
-if (document.querySelector('#profileCard')) {
-  gsap.from('#profileCard', {
-    scrollTrigger: '#profile-card',
-    duration: 1,
-    y: 60,
-    opacity: 0,
-    ease: 'power3.out'
-  });
-}
-
 // Contact form validation and message
 const contactForm = document.getElementById('contactForm');
 const formMessage = document.getElementById('formMessage');
@@ -61,6 +33,8 @@ if (navToggle && mainNav) {
   mainNav.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
       mainNav.classList.remove('open');
+    
     });
+    
   });
 }
