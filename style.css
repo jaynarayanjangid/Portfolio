@@ -448,6 +448,9 @@ section h2 {
   .resume-btn {
     margin-left: auto;
   }
+  .project-skills{
+    flex-wrap: wrap;
+  }
 }
 @media (max-width: 600px) {
 
